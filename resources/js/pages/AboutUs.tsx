@@ -1,0 +1,73 @@
+import React from 'react';
+
+const cdn = import.meta.env.VITE_ASSET_URL;
+
+const AboutUs: React.FC = () => {
+    return (
+        <>
+            <section className="bg-[#1c1c1c] px-4 py-16 text-white">
+                {/*  <div className="max-w-6xl mx-auto text-center">
+                <h2 className="mb-6 text-4xl font-extrabold underline decoration-[#6633ff] underline-offset-8">About Us</h2>
+                <p className="mx-auto max-w-2xl text-lg leading-relaxed text-[#cccccc] md:text-xl">
+                    We’re a group of passionate musicians who live for the stage. From sweat-soaked clubs to festival lights, our journey has been
+                    loud, raw, and real. Driven by rhythm and rebellion, we’re here to move your heart—and your feet.
+                </p>
+            </div> */}
+                <div className="relative max-w-6xl m-auto text-center">
+                    <h2 className="relative mb-6 flex text-center text-4xl font-extrabold underline decoration-[#6633ff] underline-offset-8">
+                        About Us
+                    </h2>
+                </div>
+
+                <div className="grid items-start max-w-6xl grid-cols-1 gap-10 mx-auto mt-16 md:grid-cols-2">
+                    {/* Top-right image with text below */}
+                    <div className="flex flex-col items-center space-y-4">
+                        <div className="overflow-hidden transition-transform duration-300 shadow-lg rounded-xl hover:scale-105">
+                            <img src={`${cdn}/band/Girlband.webp`} alt="Band taking selfie" className="object-cover w-full h-auto" />
+                        </div>
+                        <p className="max-w-md text-center text-sm text-[#cccccc]">
+                            Behind every photo is a story of late-night jams and shared dreams. We’re not just a band— we’re a family, and this is our
+                            pulse.
+                        </p>
+                    </div>
+
+                    {/* Bottom-left image with text below */}
+                    <div className="flex flex-col items-center space-y-4">
+                        <div className="overflow-hidden transition-transform duration-300 shadow-lg rounded-xl hover:scale-105">
+                            <img
+                                src={`${cdn}/Glamrockbandportraitinthe1980s.webp`}
+                                alt="Band live performance"
+                                className="object-cover w-full h-auto"
+                            />
+                        </div>
+                        <p className="max-w-md text-center text-sm text-[#cccccc]">
+                            Whether we're smashing drums or shredding chords, the stage is our sanctuary. Come see us live and feel the energy for
+                            yourself.
+                        </p>
+                        <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-[#cccccc] md:text-lg">
+                            What started as a garage jam between close friends has grown into a full-fledged movement. Bound by a love of gritty riffs
+                            and honest lyrics, we write songs that speak to both struggle and triumph.
+                        </p>
+                        <div className="grid grid-cols-1 gap-10 mt-20 md:grid-cols-3">
+                            {[
+                                { name: 'Alex', role: 'Lead Vocals / Guitar', img: '/images/jay.webp' },
+                                { name: 'Rhea', role: 'Drums / Backing Vocals', img: '/images/rhea.webp' },
+                                { name: 'Zane', role: 'Bass Guitar / Synth', img: '/images/zane.webp' },
+                            ].map((member) => (
+                                <div key={member.name} className="flex flex-col items-center space-y-3">
+                                    {/* <img src={member.img} alt={member.name} className="object-cover w-40 h-40 rounded-full shadow-md" /> */}
+                                    <div className="text-center">
+                                        <h3 className="text-xl font-bold text-white">{member.name}</h3>
+                                        <p className="text-sm text-[#aaaaaa]">{member.role}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </>
+    );
+};
+
+export default AboutUs;

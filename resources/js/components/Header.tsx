@@ -9,8 +9,8 @@ const Header: React.FC = () => (
                 <div className="flex items-center justify-between">
                     <div className="text-2xl font-bold">The Velvet Pulse</div>
                     <nav className="space-x-4">
-                        <a href="#tour" className="hover:text-[#6633ff]">
-                            Tour
+                        <a href="about" className="hover:text-[#6633ff]">
+                            About Us
                         </a>
                         <a href="#announcements" className="hover:text-[#6633ff]">
                             Announcements

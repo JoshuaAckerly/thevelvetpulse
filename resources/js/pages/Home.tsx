@@ -1,6 +1,6 @@
 import Banner from '@/components/Banner';
 import Header from '@/components/Header';
-import Newsletter from '@/components/NewsLetter';
+import Newsletter from '@/components/Newsletter';
 import PromoSection from '@/components/PromoSection';
 import TourAnnouncements from '@/components/TourAnnouncements';
 import React from 'react';

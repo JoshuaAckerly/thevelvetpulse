@@ -11,7 +11,7 @@ Route::get('/about', function () {
     return Inertia::render('AboutUs');
 })->name('about');
 
-Route::get('/TopAlbums', function () {
+Route::get('/topalbums', function () {
     return Inertia::render('TopAlbums');
 })->name('topalbums');
 

@@ -1,0 +1,5 @@
+integrations:
+  forge:
+    thevelvetpulse.graveyardjokes.com:
+      site-id: 2737297
+      server-id: 901820

@@ -11,6 +11,10 @@ Route::get('/about', function () {
     return Inertia::render('AboutUs');
 })->name('about');
 
+Route::get('/TopAlbums', function () {
+    return Inertia::render('TopAlbums');
+})->name('topalbums');
+
 /* Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', function () {
         return Inertia::render('dashboard');

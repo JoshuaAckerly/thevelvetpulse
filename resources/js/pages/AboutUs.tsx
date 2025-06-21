@@ -36,6 +36,25 @@ const AboutUs: React.FC = () => {
                         Whether we're smashing drums or shredding chords, the stage is our sanctuary. Come see us live and feel the energy for
                         yourself.
                     </p>
+                    <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-[#cccccc] md:text-lg">
+                        What started as a garage jam between close friends has grown into a full-fledged movement. Bound by a love of gritty riffs and
+                        honest lyrics, we write songs that speak to both struggle and triumph.
+                    </p>
+                    <div className="mt-20 grid grid-cols-1 gap-10 md:grid-cols-3">
+                        {[
+                            { name: 'Jay', role: 'Lead Vocals / Guitar', img: '/images/jay.webp' },
+                            { name: 'Rhea', role: 'Drums / Backing Vocals', img: '/images/rhea.webp' },
+                            { name: 'Zane', role: 'Bass Guitar / Synth', img: '/images/zane.webp' },
+                        ].map((member) => (
+                            <div key={member.name} className="flex flex-col items-center space-y-3">
+                                {/* <img src={member.img} alt={member.name} className="h-40 w-40 rounded-full object-cover shadow-md" /> */}
+                                <div className="text-center">
+                                    <h3 className="text-xl font-bold text-white">{member.name}</h3>
+                                    <p className="text-sm text-[#aaaaaa]">{member.role}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>

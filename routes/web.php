@@ -15,6 +15,11 @@ Route::get('/topalbums', function () {
     return Inertia::render('TopAlbums');
 })->name('topalbums');
 
+Route::get('/music', function () {
+    return Inertia::render('Music');
+})->name('music');
+
+
 /* Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', function () {
         return Inertia::render('dashboard');

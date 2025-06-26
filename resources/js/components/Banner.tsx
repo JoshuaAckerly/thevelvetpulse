@@ -5,7 +5,7 @@ const Banner: React.FC = () => (
         {/* Content */}
 
         <section className="relative z-10 flex items-center justify-center p-2">
-            <div className="bg-opacity-70 w-full max-w-xl rounded-lg bg-[#333333] p-2 text-center">
+            <div className="bg-opacity-70 w-full max-w-xl rounded-lg bg-[#1a1a1a] p-2 text-center">
                 <h1 className="text-4xl leading-tight font-bold tracking-tight text-[#6633ff] md:text-5xl">The Velvet Pulse</h1>
             </div>
         </section>

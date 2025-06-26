@@ -1,4 +1,5 @@
 import Banner from '@/components/Banner';
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import Newsletter from '@/components/Newsletter';
 import PromoSection from '@/components/PromoSection';
@@ -18,6 +19,7 @@ const Home: React.FC = () => {
                     <PromoSection />
                 </div>
             </div>
+            <Footer />
         </>
     );
 };

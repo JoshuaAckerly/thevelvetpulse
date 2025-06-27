@@ -2,6 +2,8 @@ import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import React from 'react';
 
+const cdn = import.meta.env.VITE_ASSET_URL;
+
 const Music: React.FC = () => {
     return (
         <>
@@ -11,28 +13,28 @@ const Music: React.FC = () => {
                     <ul className="grid grid-cols-2 md:m-auto md:w-1/2 md:gap-4">
                         <li className="col-span-2 flex w-full justify-center sm:col-span-1">
                             <img
-                                src="/images/RetroVinylRecordArtPsychedelicGraphicDesignforFunkyAlbumCovers.webp"
+                                src={`${cdn}/RetroVinylRecordArtPsychedelicGraphicDesignforFunkyAlbumCovers.webp`}
                                 alt="Music 1"
                                 className="mb-4 rounded-lg shadow-lg"
                             />
                         </li>
                         <li className="col-span-2 flex w-full justify-center sm:col-span-1">
                             <img
-                                src="/images/VintageoldblurreddustedabstractbackgroundWornmusicAlbumCoverwithRingwearSquareimage.EasytoaddasOverlayorScreenFilter.IdealperfectForposterflyerormusicalbumcoverdesign.webp"
+                                src={`${cdn}/VintageoldblurreddustedabstractbackgroundWornmusicAlbumCoverwithRingwearSquareimage.EasytoaddasOverlayorScreenFilter.IdealperfectForposterflyerormusicalbumcoverdesign.webp`}
                                 alt="Music 1"
                                 className="mb-4 rounded-lg shadow-lg"
                             />
                         </li>
                         <li className="col-span-2 flex w-full justify-center sm:col-span-1">
                             <img
-                                src="/images/Mandreamsofahousebytheseaatsunsetsurrealartforalbumcoverposterorbookillustration.webp"
+                                src={`${cdn}/Mandreamsofahousebytheseaatsunsetsurrealartforalbumcoverposterorbookillustration.webp`}
                                 alt="Music 1"
                                 className="mb-4 rounded-lg shadow-lg"
                             />
                         </li>
                         <li className="col-span-2 flex w-full justify-center sm:col-span-1">
                             <img
-                                src="/images/Abstractillustrationofalabyrinthmaze.Creativedigitalartbackground.Texturedwithsubtlelightnoiseanddust.Canbeusedasamusicalbumcoverdesign..webp"
+                                src={`${cdn}/Abstractillustrationofalabyrinthmaze.Creativedigitalartbackground.Texturedwithsubtlelightnoiseanddust.Canbeusedasamusicalbumcoverdesign..webp`}
                                 alt="Music 1"
                                 className="mb-4 w-max rounded-lg shadow-lg"
                             />
@@ -46,7 +48,7 @@ const Music: React.FC = () => {
                                 <h2 className="relative z-10 text-3xl text-white">Our Music</h2>
                                 <div className="absolute inset-0">
                                     <img
-                                        src="/images/TourBusInteriorwithInstrumentsandStageEquipment copy.webp"
+                                        src={`${cdn}/TourBusInteriorwithInstrumentsandStageEquipment copy.webp`}
                                         loading="lazy"
                                         alt="#"
                                         className="pointer-events-none h-full w-full object-cover opacity-80"
@@ -73,7 +75,7 @@ const Music: React.FC = () => {
                                         </div>
                                     </div>
                                     <img
-                                        src="/images/Mandreamsofahousebytheseaatsunsetsurrealartforalbumcoverposterorbookillustration.webp"
+                                        src={`${cdn}/Mandreamsofahousebytheseaatsunsetsurrealartforalbumcoverposterorbookillustration.webp`}
                                         alt="#"
                                         className="relative z-10 mx-auto my-auto flex p-6 md:w-1/3"
                                     />
@@ -87,28 +89,28 @@ const Music: React.FC = () => {
                         <ul className="m-4 grid grid-cols-2 md:m-auto md:w-1/2 md:gap-4">
                             <li>
                                 <img
-                                    src="/images/Abstractillustrationofalabyrinthmaze.Creativedigitalartbackground.Texturedwithsubtlelightnoiseanddust.Canbeusedasamusicalbumcoverdesign..webp"
+                                    src={`${cdn}/Abstractillustrationofalabyrinthmaze.Creativedigitalartbackground.Texturedwithsubtlelightnoiseanddust.Canbeusedasamusicalbumcoverdesign..webp`}
                                     alt="Music 1"
                                     className="mt-2 rounded-lg p-2"
                                 />
                             </li>
                             <li>
                                 <img
-                                    src="/images/eviltranscendencealbumcoversleekdigitalrenderforthealbumbeyondrealitiesstyle.generativeAI copy.webp"
+                                    src={`${cdn}/eviltranscendencealbumcoversleekdigitalrenderforthealbumbeyondrealitiesstyle.generativeAI copy.webp`}
                                     alt="Music 2"
                                     className="mt-2 rounded-lg p-2"
                                 />
                             </li>
                             <li>
                                 <img
-                                    src="/images/EnigmaticDeep-SeaCreatureBioluminescentFantasyFishwithGlowingEyeandPearl-likeSkin copy.webp"
+                                    src={`${cdn}/EnigmaticDeep-SeaCreatureBioluminescentFantasyFishwithGlowingEyeandPearl-likeSkin copy.webp`}
                                     alt="Music 3"
                                     className="rounded-lg p-2"
                                 />
                             </li>
                             <li>
                                 <img
-                                    src="/images/VintageoldblurreddustedabstractbackgroundWornmusicAlbumCoverwithRingwearSquareimage.EasytoaddasOverlayorScreenFilter.IdealperfectForposterflyerormusicalbumcoverdesign.webp"
+                                    src={`${cdn}/VintageoldblurreddustedabstractbackgroundWornmusicAlbumCoverwithRingwearSquareimage.EasytoaddasOverlayorScreenFilter.IdealperfectForposterflyerormusicalbumcoverdesign.webp`}
                                     alt="Music 4"
                                     className="w-max rounded-lg p-2"
                                 />

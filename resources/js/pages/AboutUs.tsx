@@ -2,6 +2,8 @@ import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import React from 'react';
 
+const cdn = import.meta.env.VITE_ASSET_URL;
+
 const AboutUs: React.FC = () => {
     return (
         <>
@@ -14,15 +16,17 @@ const AboutUs: React.FC = () => {
                     loud, raw, and real. Driven by rhythm and rebellion, we’re here to move your heart—and your feet.
                 </p>
             </div> */}
-                <div className="relative max-w-6xl text-center">
-                    <h2 className="mb-6 text-4xl font-extrabold underline decoration-[#6633ff] underline-offset-8">About Us</h2>
+                <div className="relative m-auto max-w-6xl text-center">
+                    <h2 className="relative mb-6 flex text-center text-4xl font-extrabold underline decoration-[#6633ff] underline-offset-8">
+                        About Us
+                    </h2>
                 </div>
 
                 <div className="mx-auto mt-16 grid max-w-6xl grid-cols-1 items-start gap-10 md:grid-cols-2">
                     {/* Top-right image with text below */}
                     <div className="flex flex-col items-center space-y-4">
                         <div className="overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
-                            <img src="/images/Girlband.webp" alt="Band taking selfie" className="h-auto w-full object-cover" />
+                            <img src={`${cdn}/Girlband.webp`} alt="Band taking selfie" className="h-auto w-full object-cover" />
                         </div>
                         <p className="max-w-md text-center text-sm text-[#cccccc]">
                             Behind every photo is a story of late-night jams and shared dreams. We’re not just a band— we’re a family, and this is our
@@ -34,7 +38,7 @@ const AboutUs: React.FC = () => {
                     <div className="flex flex-col items-center space-y-4">
                         <div className="overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
                             <img
-                                src="/images/Glamrockbandportraitinthe1980s.webp"
+                                src={`${cdn}/Glamrockbandportraitinthe1980s.webp`}
                                 alt="Band live performance"
                                 className="h-auto w-full object-cover"
                             />

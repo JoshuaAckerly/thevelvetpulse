@@ -6,11 +6,73 @@ const Music: React.FC = () => {
     return (
         <>
             <Header />
-            <main className="flex min-h-[60vh] flex-col items-center justify-center bg-[#111111] px-4 py-24 text-center text-white">
-                <h1 className="mb-4 text-4xl font-bold text-[#6633ff] md:text-5xl">Coming Soon</h1>
-                <p className="max-w-xl text-lg text-gray-400">
-                    We’re tuning up our tracks. Check back soon for new releases, exclusive content, and more from The Velvet Pulse.
-                </p>
+            <main className="flex flex-col items-center justify-center bg-[#111111] p-4 text-center text-white">
+                <div>
+                    <ul className="grid grid-cols-2">
+                        <li className="col-span-2 flex w-full justify-center sm:col-span-1">
+                            <img
+                                src="/images/RetroVinylRecordArtPsychedelicGraphicDesignforFunkyAlbumCovers.webp"
+                                alt="Music 1"
+                                className="mb-4 rounded-lg shadow-lg"
+                            />
+                        </li>
+                        <li className="col-span-2 flex w-full justify-center sm:col-span-1">
+                            <img
+                                src="/images/VintageoldblurreddustedabstractbackgroundWornmusicAlbumCoverwithRingwearSquareimage.EasytoaddasOverlayorScreenFilter.IdealperfectForposterflyerormusicalbumcoverdesign.webp"
+                                alt="Music 1"
+                                className="mb-4 rounded-lg shadow-lg"
+                            />
+                        </li>
+                        <li className="col-span-2 flex w-full justify-center sm:col-span-1">
+                            <img
+                                src="/images/Mandreamsofahousebytheseaatsunsetsurrealartforalbumcoverposterorbookillustration.webp"
+                                alt="Music 1"
+                                className="mb-4 rounded-lg shadow-lg"
+                            />
+                        </li>
+                        <li className="col-span-2 flex w-full justify-center sm:col-span-1">
+                            <img
+                                src="/images/Abstractillustrationofalabyrinthmaze.Creativedigitalartbackground.Texturedwithsubtlelightnoiseanddust.Canbeusedasamusicalbumcoverdesign..webp"
+                                alt="Music 1"
+                                className="mb-4 w-max rounded-lg shadow-lg"
+                            />
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div>
+                        <h2 className="text-3xl text-white">On Tour</h2>
+                        <div className="relative max-w-full">
+                            <div className="absolute inset-0">
+                                <img
+                                    src="/images/TourBusInteriorwithInstrumentsandStageEquipment copy.webp"
+                                    loading="lazy"
+                                    alt="#"
+                                    className="pointer-events-none h-full w-full object-cover opacity-80"
+                                />
+                            </div>
+                            <div>
+                                <p className="relative z-10 mt-4 max-w-3xl text-lg leading-relaxed font-normal text-white">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, urna eu tincidunt consectetur, nisi
+                                    nisl aliquam enim, nec dictum urna elit nec urna. Mauris non erat vitae enim cursus dictum. Etiam euismod, justo
+                                    at facilisis cursus, urna erat laoreet enim, nec dictum urna elit nec urna. Suspendisse potenti. Sed euismod, urna
+                                    eu tincidunt consectetur, nisi nisl aliquam enim, nec dictum urna elit nec urna. Mauris non erat vitae enim cursus
+                                    dictum. Etiam euismod, justo at facilisis cursus, urna erat laoreet enim, nec dictum urna elit nec urna.
+                                    Suspendisse potenti. Sed euismod, urna eu tincidunt consectetur, nisi nisl aliquam enim, nec dictum urna elit nec
+                                    urna. Mauris non erat vitae enim cursus dictum. Etiam euismod, justo at facilisis cursus, urna erat laoreet enim,
+                                    nec dictum urna elit nec urna. Suspendisse potenti. Sed euismod, urna eu tincidunt consectetur, nisi nisl aliquam
+                                    enim, nec dictum urna elit nec urna. Mauris non erat vitae enim cursus dictum. Etiam euismod, justo at facilisis
+                                    cursus, urna erat laoreet enim, nec dictum urna elit nec urna. Suspendisse potenti.
+                                </p>
+                                <img
+                                    src="/images/Mandreamsofahousebytheseaatsunsetsurrealartforalbumcoverposterorbookillustration.webp"
+                                    alt="#"
+                                    className="relative z-10 mx-auto p-6 opacity-80"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </main>
             <Footer />
         </>

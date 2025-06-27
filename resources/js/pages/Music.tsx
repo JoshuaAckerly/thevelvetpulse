@@ -43,7 +43,7 @@ const Music: React.FC = () => {
                     <div>
                         <div className="relative max-w-full">
                             <div>
-                                <h2 className="relative z-10 text-3xl text-white">On Tour</h2>
+                                <h2 className="relative z-10 text-3xl text-white">Our Music</h2>
                                 <div className="absolute inset-0">
                                     <img
                                         src="/images/TourBusInteriorwithInstrumentsandStageEquipment copy.webp"
@@ -80,6 +80,40 @@ const Music: React.FC = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <ul className="m-4 grid grid-cols-2 md:m-auto md:w-1/2 md:gap-4">
+                            <li>
+                                <img
+                                    src="/images/Abstractillustrationofalabyrinthmaze.Creativedigitalartbackground.Texturedwithsubtlelightnoiseanddust.Canbeusedasamusicalbumcoverdesign..webp"
+                                    alt="Music 1"
+                                    className="mt-2 rounded-lg p-2"
+                                />
+                            </li>
+                            <li>
+                                <img
+                                    src="/images/eviltranscendencealbumcoversleekdigitalrenderforthealbumbeyondrealitiesstyle.generativeAI copy.webp"
+                                    alt="Music 2"
+                                    className="mt-2 rounded-lg p-2"
+                                />
+                            </li>
+                            <li>
+                                <img
+                                    src="/images/EnigmaticDeep-SeaCreatureBioluminescentFantasyFishwithGlowingEyeandPearl-likeSkin copy.webp"
+                                    alt="Music 3"
+                                    className="rounded-lg p-2"
+                                />
+                            </li>
+                            <li>
+                                <img
+                                    src="/images/VintageoldblurreddustedabstractbackgroundWornmusicAlbumCoverwithRingwearSquareimage.EasytoaddasOverlayorScreenFilter.IdealperfectForposterflyerormusicalbumcoverdesign.webp"
+                                    alt="Music 4"
+                                    className="w-max rounded-lg p-2"
+                                />
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </main>

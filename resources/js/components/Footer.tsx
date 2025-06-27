@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
                     <a href="/about" className="transition hover:text-[#6633ff]">
                         About
                     </a>
-                    <a href="#announcements" className="transition hover:text-[#6633ff]">
+                    <a href="/music" className="transition hover:text-[#6633ff]">
                         Music
                     </a>
                     <a href="#signup" className="transition hover:text-[#6633ff]">

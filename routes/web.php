@@ -21,13 +21,17 @@ Route::get('/music', function () {
     return Inertia::render('Music');
 })->name('music');
 
+Route::get('/tourevents', function () {
+    return Inertia::render('TourEvents');
+})->name('tourevents');
+
 Route::get('/generate-sitemap', function () {
     Sitemap::create()
         ->add(Url::create('/'))
         ->add(Url::create('/about'))
         ->add(Url::create('/music'))
         ->add(Url::create('/topalbums'))
-
+        ->add(Url::create('/tourEvents'))
         ->writeToFile(public_path('sitemap.xml'));
 
     return 'Sitemap generated!';

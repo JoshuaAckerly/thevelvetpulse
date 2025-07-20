@@ -17,7 +17,7 @@ const Header: React.FC = () => (
                 <a href="/music" className="transition hover:text-[#6633ff]">
                     Music
                 </a>
-                <a href="#tour&events" className="transition hover:text-[#6633ff]">
+                <a href="/tourevents" className="transition hover:text-[#6633ff]">
                     Tour / Events
                 </a>
                 <a href="#contact" className="transition hover:text-[#6633ff]">

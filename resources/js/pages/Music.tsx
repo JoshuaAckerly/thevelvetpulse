@@ -45,7 +45,7 @@ const Music: React.FC = () => {
                     <div>
                         <div className="relative max-w-full">
                             <div>
-                                <h2 className="relative z-10 text-3xl text-white">Our Music</h2>
+                                <h2 className="relative z-10 bg-[#111111] text-3xl text-white">Our Music</h2>
                                 <div className="absolute inset-0">
                                     <img
                                         src={`${cdn}/TourBusInteriorwithInstrumentsandStageEquipment copy.webp`}
@@ -57,7 +57,7 @@ const Music: React.FC = () => {
                             </div>
                             <div className="relative flex items-center justify-center">
                                 <div className="relative flex flex-col items-center justify-center p-6 md:flex-row md:items-start">
-                                    <div className="relative z-10 m-auto text-lg font-normal text-white md:w-full md:p-10">
+                                    <div className="relative z-10 m-auto w-1/2 rounded-2xl bg-[#111111] text-lg font-normal text-white opacity-80 md:w-full md:p-10">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, urna eu tincidunt consectetur,
                                         nisi nisl aliquam enim, nec dictum urna elit nec urna. Mauris non erat vitae enim cursus dictum. Etiam
                                         euismod, justo at facilisis cursus, urna erat laoreet enim, nec dictum urna elit nec urna. Suspendisse

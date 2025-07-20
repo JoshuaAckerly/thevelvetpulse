@@ -1,5 +1,7 @@
 <?php
 
+use Spatie\Sitemap\Sitemap;
+use Spatie\Sitemap\Tags\Url;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -18,6 +20,18 @@ Route::get('/topalbums', function () {
 Route::get('/music', function () {
     return Inertia::render('Music');
 })->name('music');
+
+Route::get('/generate-sitemap', function () {
+    Sitemap::create()
+        ->add(Url::create('/'))
+        ->add(Url::create('/about'))
+        ->add(Url::create('/music'))
+        ->add(Url::create('/topalbums'))
+
+        ->writeToFile(public_path('sitemap.xml'));
+
+    return 'Sitemap generated!';
+});
 
 
 /* Route::middleware(['auth', 'verified'])->group(function () {

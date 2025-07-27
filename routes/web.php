@@ -9,10 +9,6 @@ Route::get('/', function () {
     return Inertia::render('Home');
 })->name('home');
 
-Route::get('/about', function () {
-    return Inertia::render('AboutUs');
-})->name('about');
-
 Route::get('/topalbums', function () {
     return Inertia::render('TopAlbums');
 })->name('topalbums');
@@ -28,7 +24,6 @@ Route::get('/tourevents', function () {
 Route::get('/generate-sitemap', function () {
     Sitemap::create()
         ->add(Url::create('/'))
-        ->add(Url::create('/about'))
         ->add(Url::create('/music'))
         ->add(Url::create('/topalbums'))
         ->add(Url::create('/tourEvents'))
@@ -37,7 +32,7 @@ Route::get('/generate-sitemap', function () {
     return 'Sitemap generated!';
 });
 
-
+Route::permanentRedirect('/about', '/');
 /* Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', function () {
         return Inertia::render('dashboard');

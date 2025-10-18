@@ -44,6 +44,31 @@
         @inertiaHead
     </head>
     <body class="font-sans antialiased">
-        @inertia
+        <div class="min-h-screen flex flex-col bg-background text-foreground">
+            <header class="border-b border-border bg-card text-card-foreground">
+                <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+                    <a href="/" class="text-lg font-semibold">{{ config('app.name', 'Laravel') }}</a>
+                    <nav aria-label="Main navigation">
+                        <ul class="flex gap-4 items-center text-sm">
+                            <li><a href="/" class="hover:underline">Home</a></li>
+                            <li><a href="/settings" class="hover:underline">Settings</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <main class="flex-1 container mx-auto px-4 py-8">
+                @inertia
+            </main>
+
+            <footer class="border-t border-border bg-card text-card-foreground">
+                <div class="container mx-auto px-4 py-6 text-sm text-muted-foreground">
+                    <div class="flex items-center justify-between">
+                        <div>© {{ date('Y') }} {{ config('app.name') }}. All rights reserved.</div>
+                        <div><a href="/privacy" class="hover:underline">Privacy</a></div>
+                    </div>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>

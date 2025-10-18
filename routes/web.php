@@ -22,11 +22,13 @@ Route::get('/tourevents', function () {
 })->name('tourevents');
 
 Route::get('/generate-sitemap', function () {
+    $base = 'https://thevelvetpulse.graveyardjokes.com';
+
     Sitemap::create()
-        ->add(Url::create('/'))
-        ->add(Url::create('/music'))
-        ->add(Url::create('/topalbums'))
-        ->add(Url::create('/tourEvents'))
+        ->add(Url::create($base . '/'))
+        ->add(Url::create($base . '/music'))
+        ->add(Url::create($base . '/topalbums'))
+        ->add(Url::create($base . '/tourevents'))
         ->writeToFile(public_path('sitemap.xml'));
 
     return 'Sitemap generated!';

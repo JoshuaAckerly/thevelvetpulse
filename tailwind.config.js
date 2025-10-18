@@ -8,7 +8,21 @@ module.exports = {
         './resources/**/*.tsx',
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                sans: ["Instrument Sans", 'ui-sans-serif', 'system-ui'],
+            },
+            container: {
+                center: true,
+                padding: '1rem',
+            },
+            colors: {
+                background: 'var(--background)',
+                foreground: 'var(--foreground)',
+                card: 'var(--card)',
+                primary: 'var(--primary)'
+            }
+        },
     },
     plugins: [require("tailwindcss-animate")],
 

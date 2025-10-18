@@ -13,7 +13,11 @@ createInertiaApp({
     setup({ el, App, props }) {
         const root = createRoot(el);
 
-        root.render(<App {...props} />);
+        root.render(
+            <div className="font-sans antialiased min-h-screen bg-background text-foreground">
+                <App {...props} />
+            </div>
+        );
     },
     progress: {
         color: '#4B5563',

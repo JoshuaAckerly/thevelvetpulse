@@ -21,6 +21,18 @@ Route::get('/tourevents', function () {
     return Inertia::render('TourEvents');
 })->name('tourevents');
 
+Route::get('/tours', function () {
+    return Inertia::render('Tours');
+})->name('tours');
+
+Route::get('/merch', function () {
+    return Inertia::render('Merch');
+})->name('merch');
+
+Route::get('/contact', function () {
+    return Inertia::render('Contact');
+})->name('contact');
+
 Route::get('/generate-sitemap', function () {
     $base = 'https://thevelvetpulse.graveyardjokes.com';
 
@@ -29,6 +41,9 @@ Route::get('/generate-sitemap', function () {
         ->add(Url::create($base . '/music'))
         ->add(Url::create($base . '/topalbums'))
         ->add(Url::create($base . '/tourevents'))
+        ->add(Url::create($base . '/tours'))
+        ->add(Url::create($base . '/merch'))
+        ->add(Url::create($base . '/contact'))
         ->writeToFile(public_path('sitemap.xml'));
 
     return 'Sitemap generated!';

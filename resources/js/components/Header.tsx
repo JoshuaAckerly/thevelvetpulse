@@ -1,25 +1,25 @@
-import React from 'react';
+import { Link } from '@inertiajs/react';
 
-const Header: React.FC = () => (
+const Header = () => (
     <header className="bg-[#1a1a1a] px-6 py-6 text-white shadow-md">
         <div className="flex flex-col items-center max-w-6xl gap-4 mx-auto md:flex-row md:justify-between">
-            {/* Logo */}
-            <div className="text-3xl font-bold text-[#6633ff]">The Velvet Pulse</div>
+            <Link href="/" className="text-3xl font-bold text-[#6633ff] hover:text-[#7c4dff] transition-colors">
+                The Velvet Pulse
+            </Link>
 
-            {/* Navigation */}
             <nav className="flex flex-col items-center gap-2 text-sm md:flex-row md:gap-6 md:text-base">
-                <a href="/" className="transition hover:text-[#6633ff]">
+                <Link href="/" className="transition hover:text-[#6633ff]">
                     Home
-                </a>
-                <a href="/music" className="transition hover:text-[#6633ff]">
+                </Link>
+                <Link href="/music" className="transition hover:text-[#6633ff]">
                     Music
-                </a>
-                <a href="/tourevents" className="transition hover:text-[#6633ff]">
-                    Tour / Events
-                </a>
-                <a href="#contact" className="transition hover:text-[#6633ff]">
-                    Contact
-                </a>
+                </Link>
+                <Link href="/tours" className="transition hover:text-[#6633ff]">
+                    Tours
+                </Link>
+                <Link href="/merch" className="transition hover:text-[#6633ff]">
+                    Merch
+                </Link>
             </nav>
         </div>
     </header>

@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from '@inertiajs/react';
 import { FaEnvelope, FaInstagram, FaSpotify } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
@@ -22,9 +22,9 @@ const Footer: React.FC = () => {
                     <a href="#signup" className="transition hover:text-[#6633ff]">
                         Tour
                     </a>
-                    <a href="#newsletter" className="transition hover:text-[#6633ff]">
+                    <Link href="/contact" className="transition hover:text-[#6633ff]">
                         Contact
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Social Icons */}

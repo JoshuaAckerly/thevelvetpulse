@@ -6,8 +6,7 @@
     "printWidth": 150,
     "plugins": ["prettier-plugin-organize-imports", "prettier-plugin-tailwindcss"],
     "tailwindFunctions": ["clsx", "cn"],
-    "tailwindStyleSheet": "./resources/css/app.css",
-    "tailwindConfig": "./tailwind.config.js",
+    "tailwindStylesheet": "resources/css/app.css",
     "tabWidth": 4,
     "overrides": [
         {

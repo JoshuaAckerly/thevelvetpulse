@@ -10,21 +10,21 @@ const Music = () => {
             year: '2024',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
             tracks: 12,
-            cover: `${cdn}/RetroVinylRecordArtPsychedelicGraphicDesignforFunkyAlbumCovers.webp`
+            cover: `${cdn}/albums/RetroVinylRecordArtPsychedelicGraphicDesignforFunkyAlbumCovers.webp`
         },
         {
             title: 'Neon Dreams',
             year: '2023',
             description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
             tracks: 10,
-            cover: `${cdn}/Mandreamsofahousebytheseaatsunsetsurrealartforalbumcoverposterorbookillustration.webp`
+            cover: `${cdn}/albums/Mandreamsofahousebytheseaatsunsetsurrealartforalbumcoverposterorbookillustration.webp`
         },
         {
             title: 'Electric Pulse',
             year: '2022',
             description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
             tracks: 14,
-            cover: `${cdn}/Abstractillustrationofalabyrinthmaze.Creativedigitalartbackground.Texturedwithsubtlelightnoiseanddust.Canbeusedasamusicalbumcoverdesign..webp`
+            cover: `${cdn}/albums/Abstractillustrationofalabyrinthmaze.Creativedigitalartbackground.Texturedwithsubtlelightnoiseanddust.Canbeusedasamusicalbumcoverdesign..webp`
         }
     ];
 

@@ -4,7 +4,7 @@ import { Link } from '@inertiajs/react';
 
 const Home = () => {
     const cdn = import.meta.env.VITE_ASSET_URL;
-    const backgroundImage = `url('${cdn}/AdobeStock_1423234483.webp')`;
+    const backgroundImage = `url('${cdn}/backgrounds/AdobeStock_1423234483.webp')`;
 
     return (
         <Layout title="Welcome">

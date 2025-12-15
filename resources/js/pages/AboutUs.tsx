@@ -23,7 +23,7 @@ const AboutUs: React.FC = () => {
                     {/* Top-right image with text below */}
                     <div className="flex flex-col items-center space-y-4">
                         <div className="overflow-hidden transition-transform duration-300 shadow-lg rounded-xl hover:scale-105">
-                            <img src={`${cdn}/Girlband.webp`} alt="Band taking selfie" className="object-cover w-full h-auto" />
+                            <img src={`${cdn}/band/Girlband.webp`} alt="Band taking selfie" className="object-cover w-full h-auto" />
                         </div>
                         <p className="max-w-md text-center text-sm text-[#cccccc]">
                             Behind every photo is a story of late-night jams and shared dreams. We’re not just a band— we’re a family, and this is our

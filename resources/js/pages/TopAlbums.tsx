@@ -1,26 +1,28 @@
 import React from 'react';
 
+const cdn = import.meta.env.VITE_ASSET_URL;
+
 const albums = [
     {
-        cover: '/images/RetroVinylRecordArtPsychedelicGraphicDesignforFunkyAlbumCovers.webp',
+        cover: `${cdn}/albums/RetroVinylRecordArtPsychedelicGraphicDesignforFunkyAlbumCovers.webp`,
         title: 'Album Title',
         artist: 'Artist Name',
         releaseDate: 'YYYY-MM-DD',
     },
     {
-        cover: '/images/VintageoldblurreddustedabstractbackgroundWornmusicAlbumCoverwithRingwearSquareimage.EasytoaddasOverlayorScreenFilter.IdealperfectForposterflyerormusicalbumcoverdesign.webp',
+        cover: `${cdn}/albums/VintageAlbumCover.webp`,
         title: 'Album Title',
         artist: 'Artist Name',
         releaseDate: 'YYYY-MM-DD',
     },
     {
-        cover: '/images/Mandreamsofahousebytheseaatsunsetsurrealartforalbumcoverposterorbookillustration.webp',
+        cover: `${cdn}/albums/Mandreamsofahousebytheseaatsunsetsurrealartforalbumcoverposterorbookillustration.webp`,
         title: 'Album Title',
         artist: 'Artist Name',
         releaseDate: 'YYYY-MM-DD',
     },
     {
-        cover: '/images/Abstractillustrationofalabyrinthmaze.Creativedigitalartbackground.Texturedwithsubtlelightnoiseanddust.Canbeusedasamusicalbumcoverdesign..webp',
+        cover: `${cdn}/albums/Abstractillustrationofalabyrinthmaze.Creativedigitalartbackground.Texturedwithsubtlelightnoiseanddust.Canbeusedasamusicalbumcoverdesign..webp`,
         title: 'Album Title',
         artist: 'Artist Name',
         releaseDate: 'YYYY-MM-DD',
@@ -50,7 +52,7 @@ const TopAlbums: React.FC = () => {
             </section>
             <section>
                 <div>
-                    <img src="/images/TourBusInteriorwithInstrumentsandStageEquipment.webp" alt="Placeholder" className="placeholder-image" />
+                    <img src={`${cdn}/band/TourBusInteriorwithInstrumentsandStageEquipment.webp`} alt="Placeholder" className="placeholder-image" />
                     <div>
                         <div>
                             <h2>On Tour</h2>

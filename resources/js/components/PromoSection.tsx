@@ -15,7 +15,7 @@ const PromoSection: React.FC = () => (
                 </div>
                 <div className="grid grid-cols-1 gap-4 rounded-2xl bg-[#333333] md:grid-cols-2">
                     <div className="flex items-center justify-center p-2">
-                        <img src={`${cdn}/AdobeStock_565842769.webp`} alt="Neon Dreams cover art" className="h-auto rounded-lg" />
+                        <img src={`${cdn}/backgrounds/AdobeStock_565842769.webp`} alt="Neon Dreams cover art" className="h-auto rounded-lg" />
                     </div>
                     <div className="flex items-center justify-center p-2">
                         <p>
@@ -27,7 +27,7 @@ const PromoSection: React.FC = () => (
             </div>
 
             <div className="flex flex-col items-center justify-center p-2">
-                <img src={`${cdn}/AdobeStock_1261974513.webp`} alt="Live show promo" className="w-xs rounded-lg" />
+                <img src={`${cdn}/backgrounds/AdobeStock_1261974513.webp`} alt="Live show promo" className="w-xs rounded-lg" />
             </div>
         </section>
     </div>

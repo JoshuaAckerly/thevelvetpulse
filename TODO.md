@@ -65,6 +65,7 @@
 - [ ] Deployment guide
 - [ ] Contributing guidelines
 - [ ] Code style guide
+- [x] Update documentation to reflect Linux backend setup
 
 ## Future Features
 

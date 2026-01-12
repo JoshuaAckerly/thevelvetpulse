@@ -25,7 +25,7 @@ Your images are now configured to be organized under the `thevelvetpulse/` folde
    
    - **PowerShell Script** ([migrate-images-to-s3.ps1](migrate-images-to-s3.ps1))
      - Alternative migration using AWS CLI
-     - Works on Windows with PowerShell
+     - Windows-only with PowerShell
 
 ### 4. **Documentation** ([S3_MIGRATION_GUIDE.md](S3_MIGRATION_GUIDE.md))
    - Complete guide for managing S3 images

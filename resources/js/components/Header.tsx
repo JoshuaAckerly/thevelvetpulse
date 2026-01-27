@@ -20,6 +20,9 @@ const Header = () => (
                 <Link href="/merch" className="transition hover:text-[#6633ff]">
                     Merch
                 </Link>
+                <Link href="http://localhost:8007/login" className="transition hover:text-[#6633ff]">
+                    Login
+                </Link>
             </nav>
         </div>
     </header>

@@ -1,6 +1,7 @@
 import Container from '@/components/Container';
 import Layout from '@/components/Layout';
 import { Link } from '@inertiajs/react';
+import { getProjectUrl } from '../env';
 
 const Home = () => {
     const cdn = import.meta.env.VITE_ASSET_URL;
@@ -21,12 +22,12 @@ const Home = () => {
                                 Experience the electrifying sound that's captivating audiences worldwide
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Link 
-                                    href="/music" 
+                                <a 
+                                    href={getProjectUrl('thevelvetpulse')} 
                                     className="px-8 py-3 bg-[#6633ff] hover:bg-[#7c4dff] text-white rounded-lg font-semibold transition-colors"
                                 >
                                     Listen Now
-                                </Link>
+                                </a>
                                 <Link 
                                     href="/tours" 
                                     className="px-8 py-3 border border-[#6633ff] text-[#6633ff] hover:bg-[#6633ff] hover:text-white rounded-lg font-semibold transition-colors"

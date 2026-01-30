@@ -1,4 +1,6 @@
+
 import { Link } from '@inertiajs/react';
+import { getLoginUrl } from '../env';
 
 const Header = () => (
     <header className="bg-[#1a1a1a] px-6 py-6 text-white shadow-md">
@@ -20,9 +22,9 @@ const Header = () => (
                 <Link href="/merch" className="transition hover:text-[#6633ff]">
                     Merch
                 </Link>
-                <Link href="http://domain.test/login" className="transition hover:text-[#6633ff]">
+                <a href={getLoginUrl('thevelvetpulse')} className="transition hover:text-[#6633ff]">
                     Login
-                </Link>
+                </a>
             </nav>
         </div>
     </header>

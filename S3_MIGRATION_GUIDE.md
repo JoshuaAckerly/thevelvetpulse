@@ -122,7 +122,7 @@ image: `${cdn}/merch/tshirt-placeholder.jpg`
 ```bash
 aws configure
 # Enter:
-# AWS Access Key ID: AKIA36KHMU2YMZ7VSORN
+# AWS Access Key ID: <your-access-key-id>
 # AWS Secret Access Key: [from .env]
 # Default region: us-east-2
 # Output format: json

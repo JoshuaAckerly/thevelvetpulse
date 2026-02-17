@@ -33,6 +33,10 @@ Route::get('/contact', function () {
     return Inertia::render('Contact');
 })->name('contact');
 
+Route::get('/about', function () {
+    return Inertia::render('AboutUs');
+})->name('about');
+
 Route::get('/generate-sitemap', function () {
     $base = 'https://thevelvetpulse.graveyardjokes.com';
 
@@ -44,12 +48,12 @@ Route::get('/generate-sitemap', function () {
         ->add(Url::create($base . '/tours'))
         ->add(Url::create($base . '/merch'))
         ->add(Url::create($base . '/contact'))
+        ->add(Url::create($base . '/about'))
         ->writeToFile(public_path('sitemap.xml'));
 
     return 'Sitemap generated!';
 });
 
-Route::redirect('/about', '/', 301);
 Route::redirect('/login', '/', 301);
 Route::redirect('/register', '/', 301);
 Route::redirect('/forgot-password', '/', 301);

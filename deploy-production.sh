@@ -5,7 +5,7 @@
 set -e
 
 # Configuration
-SSR_PORT=13718
+SSR_PORT=13717
 PROJECT_NAME="thevelvetpulse"
 DEPLOY_PATH="/var/www/thevelvetpulse"
 PHP_VERSION="8.3"

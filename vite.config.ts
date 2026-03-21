@@ -26,7 +26,7 @@ export default defineConfig(({ mode }) => {
         // default: local/development
         server = {
             port: 8086,
-            host: '10.0.1.30',
+            host: '0.0.0.0',
             origin: 'http://thevelvetpulse.graveyardjokes.local:8086',
             cors: {
                 origin: 'http://thevelvetpulse.graveyardjokes.local',

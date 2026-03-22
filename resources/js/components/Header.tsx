@@ -1,5 +1,6 @@
 
 import { Link } from '@inertiajs/react';
+import NotificationBell from '@/components/NotificationBell';
 import { getLoginUrl } from '../env';
 
 const Header = () => (
@@ -25,6 +26,7 @@ const Header = () => (
                 <a href={getLoginUrl('thevelvetpulse')} className="transition hover:text-[#6633ff]">
                     Login
                 </a>
+                <NotificationBell />
             </nav>
         </div>
     </header>

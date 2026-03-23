@@ -1,9 +1,9 @@
 <?php
 
-use Spatie\Sitemap\Sitemap;
-use Spatie\Sitemap\Tags\Url;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use Spatie\Sitemap\Sitemap;
+use Spatie\Sitemap\Tags\Url;
 
 Route::get('/', function () {
     return Inertia::render('Home');
@@ -41,14 +41,14 @@ Route::get('/generate-sitemap', function () {
     $base = 'https://thevelvetpulse.graveyardjokes.com';
 
     Sitemap::create()
-        ->add(Url::create($base . '/'))
-        ->add(Url::create($base . '/music'))
-        ->add(Url::create($base . '/topalbums'))
-        ->add(Url::create($base . '/tourevents'))
-        ->add(Url::create($base . '/tours'))
-        ->add(Url::create($base . '/merch'))
-        ->add(Url::create($base . '/contact'))
-        ->add(Url::create($base . '/about'))
+        ->add(Url::create($base.'/'))
+        ->add(Url::create($base.'/music'))
+        ->add(Url::create($base.'/topalbums'))
+        ->add(Url::create($base.'/tourevents'))
+        ->add(Url::create($base.'/tours'))
+        ->add(Url::create($base.'/merch'))
+        ->add(Url::create($base.'/contact'))
+        ->add(Url::create($base.'/about'))
         ->writeToFile(public_path('sitemap.xml'));
 
     return 'Sitemap generated!';

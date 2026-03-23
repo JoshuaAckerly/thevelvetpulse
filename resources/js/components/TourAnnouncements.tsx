@@ -1,7 +1,7 @@
 import React from 'react';
 
 const TourAnnouncements: React.FC = () => (
-    <div className="animate-in fade-in slide-in-from-bottom duration-700">
+    <div className="duration-700 animate-in fade-in slide-in-from-bottom">
         {/* Content */}
 
         <section className="relative z-10 mx-auto grid grid-cols-1 gap-2 p-2 text-center text-white md:grid-cols-2 md:gap-8">

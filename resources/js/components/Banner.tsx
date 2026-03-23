@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Banner: React.FC = () => (
-    <div className="animate-in fade-in slide-in-from-bottom duration-700">
+    <div className="duration-700 animate-in fade-in slide-in-from-bottom">
         {/* Content */}
 
         <section className="relative z-10 flex items-center justify-center pt-8">

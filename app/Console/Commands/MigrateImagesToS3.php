@@ -32,8 +32,9 @@ class MigrateImagesToS3 extends Command
         $isDryRun = $this->option('dry-run');
         $sourceDir = base_path($this->option('directory'));
 
-        if (!File::exists($sourceDir)) {
+        if (! File::exists($sourceDir)) {
             $this->error("Source directory does not exist: {$sourceDir}");
+
             return 1;
         }
 
@@ -67,6 +68,7 @@ class MigrateImagesToS3 extends Command
 
         if ($imageFiles->isEmpty()) {
             $this->warn('No image files found to migrate.');
+
             return 0;
         }
 
@@ -78,7 +80,7 @@ class MigrateImagesToS3 extends Command
         $failed = 0;
 
         foreach ($imageFiles as $file) {
-            $relativePath = str_replace($sourceDir . DIRECTORY_SEPARATOR, '', $file->getPathname());
+            $relativePath = str_replace($sourceDir.DIRECTORY_SEPARATOR, '', $file->getPathname());
             $filename = $file->getFilename();
             $filenameLower = strtolower($filename);
 
@@ -92,17 +94,19 @@ class MigrateImagesToS3 extends Command
             }
 
             // Build S3 path
-            $s3Path = $category . '/' . $filename;
+            $s3Path = $category.'/'.$filename;
 
             // Check if already exists
             if (Storage::disk('s3')->exists($s3Path)) {
                 $this->warn("⏩ Skipped (already exists): {$s3Path}");
                 $skipped++;
+
                 continue;
             }
 
             if ($isDryRun) {
                 $this->line("🔍 [DRY RUN] Would upload: {$relativePath} → {$s3Path}");
+
                 continue;
             }
 
@@ -110,11 +114,11 @@ class MigrateImagesToS3 extends Command
             try {
                 $contents = File::get($file->getPathname());
                 Storage::disk('s3')->put($s3Path, $contents, 'public');
-                
+
                 $this->info("✅ Uploaded: {$s3Path}");
                 $uploaded++;
             } catch (\Exception $e) {
-                $this->error("❌ Failed to upload {$relativePath}: " . $e->getMessage());
+                $this->error("❌ Failed to upload {$relativePath}: ".$e->getMessage());
                 $failed++;
             }
         }

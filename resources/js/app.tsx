@@ -14,9 +14,9 @@ createInertiaApp({
         const root = createRoot(el);
 
         root.render(
-            <div className="font-sans antialiased min-h-screen bg-background text-foreground">
+            <div className="min-h-screen bg-background font-sans text-foreground antialiased">
                 <App {...props} />
-            </div>
+            </div>,
         );
     },
     progress: {

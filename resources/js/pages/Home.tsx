@@ -10,27 +10,25 @@ const Home = () => {
     return (
         <Layout title="Welcome">
             {/* Hero Section */}
-            <div className="relative min-h-screen bg-center bg-cover" style={{ backgroundImage }}>
+            <div className="relative min-h-screen bg-cover bg-center" style={{ backgroundImage }}>
                 <div className="absolute inset-0 bg-black/60" />
-                <div className="relative z-10 flex items-center justify-center min-h-screen">
+                <div className="relative z-10 flex min-h-screen items-center justify-center">
                     <Container>
                         <div className="text-center text-white">
-                            <h1 className="text-5xl md:text-7xl font-bold text-[#6633ff] mb-6 animate-fade-in">
-                                The Velvet Pulse
-                            </h1>
-                            <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                            <h1 className="animate-fade-in mb-6 text-5xl font-bold text-[#6633ff] md:text-7xl">The Velvet Pulse</h1>
+                            <p className="mx-auto mb-8 max-w-2xl text-xl text-gray-300 md:text-2xl">
                                 Experience the electrifying sound that's captivating audiences worldwide
                             </p>
-                            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <a 
-                                    href={getProjectUrl('thevelvetpulse')} 
-                                    className="px-8 py-3 bg-[#6633ff] hover:bg-[#7c4dff] text-white rounded-lg font-semibold transition-colors"
+                            <div className="flex flex-col justify-center gap-4 sm:flex-row">
+                                <a
+                                    href={getProjectUrl('thevelvetpulse')}
+                                    className="rounded-lg bg-[#6633ff] px-8 py-3 font-semibold text-white transition-colors hover:bg-[#7c4dff]"
                                 >
                                     Listen Now
                                 </a>
-                                <Link 
-                                    href="/tours" 
-                                    className="px-8 py-3 border border-[#6633ff] text-[#6633ff] hover:bg-[#6633ff] hover:text-white rounded-lg font-semibold transition-colors"
+                                <Link
+                                    href="/tours"
+                                    className="rounded-lg border border-[#6633ff] px-8 py-3 font-semibold text-[#6633ff] transition-colors hover:bg-[#6633ff] hover:text-white"
                                 >
                                     Tour Dates
                                 </Link>
@@ -41,33 +39,31 @@ const Home = () => {
             </div>
 
             {/* Featured Content */}
-            <div className="bg-gradient-to-b from-black to-zinc-900 text-white py-20">
+            <div className="bg-gradient-to-b from-black to-zinc-900 py-20 text-white">
                 <Container>
-                    <div className="grid md:grid-cols-3 gap-8">
+                    <div className="grid gap-8 md:grid-cols-3">
                         <div className="text-center">
-                            <h3 className="text-2xl font-bold text-[#6633ff] mb-4">Latest Album</h3>
-                            <p className="text-gray-300 mb-4">
+                            <h3 className="mb-4 text-2xl font-bold text-[#6633ff]">Latest Album</h3>
+                            <p className="mb-4 text-gray-300">
                                 Midnight Reverie - Our newest collection of electrifying tracks that push the boundaries of sound.
                             </p>
-                            <Link href="/music" className="text-[#6633ff] hover:text-[#7c4dff] font-semibold">
+                            <Link href="/music" className="font-semibold text-[#6633ff] hover:text-[#7c4dff]">
                                 Explore Music →
                             </Link>
                         </div>
                         <div className="text-center">
-                            <h3 className="text-2xl font-bold text-[#6633ff] mb-4">Live Shows</h3>
-                            <p className="text-gray-300 mb-4">
+                            <h3 className="mb-4 text-2xl font-bold text-[#6633ff]">Live Shows</h3>
+                            <p className="mb-4 text-gray-300">
                                 Join us on tour as we bring The Velvet Pulse experience to cities across the country.
                             </p>
-                            <Link href="/tours" className="text-[#6633ff] hover:text-[#7c4dff] font-semibold">
+                            <Link href="/tours" className="font-semibold text-[#6633ff] hover:text-[#7c4dff]">
                                 View Dates →
                             </Link>
                         </div>
                         <div className="text-center">
-                            <h3 className="text-2xl font-bold text-[#6633ff] mb-4">Merchandise</h3>
-                            <p className="text-gray-300 mb-4">
-                                Get your official Velvet Pulse gear and show your support for the band.
-                            </p>
-                            <Link href="/merch" className="text-[#6633ff] hover:text-[#7c4dff] font-semibold">
+                            <h3 className="mb-4 text-2xl font-bold text-[#6633ff]">Merchandise</h3>
+                            <p className="mb-4 text-gray-300">Get your official Velvet Pulse gear and show your support for the band.</p>
+                            <Link href="/merch" className="font-semibold text-[#6633ff] hover:text-[#7c4dff]">
                                 Shop Now →
                             </Link>
                         </div>

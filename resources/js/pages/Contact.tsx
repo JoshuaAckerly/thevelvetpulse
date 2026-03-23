@@ -4,56 +4,52 @@ import Layout from '@/components/Layout';
 const Contact = () => {
     return (
         <Layout title="Contact">
-            <div className="bg-gradient-to-b from-black via-zinc-900 to-black text-white min-h-screen">
+            <div className="min-h-screen bg-gradient-to-b from-black via-zinc-900 to-black text-white">
                 <Container className="py-16">
-                    <div className="text-center mb-12">
-                        <h1 className="text-4xl md:text-6xl font-bold text-[#6633ff] mb-4">
-                            Contact Us
-                        </h1>
-                        <p className="text-xl text-gray-300">
-                            Get in touch with The Velvet Pulse
-                        </p>
+                    <div className="mb-12 text-center">
+                        <h1 className="mb-4 text-4xl font-bold text-[#6633ff] md:text-6xl">Contact Us</h1>
+                        <p className="text-xl text-gray-300">Get in touch with The Velvet Pulse</p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                    <div className="mx-auto grid max-w-4xl gap-12 md:grid-cols-2">
                         <div>
-                            <h2 className="text-2xl font-bold text-[#6633ff] mb-6">Send us a message</h2>
+                            <h2 className="mb-6 text-2xl font-bold text-[#6633ff]">Send us a message</h2>
                             <form className="space-y-6">
                                 <div>
-                                    <label className="block text-sm font-medium mb-2">Name</label>
-                                    <input 
-                                        type="text" 
-                                        className="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg focus:border-[#6633ff] focus:outline-none"
+                                    <label className="mb-2 block text-sm font-medium">Name</label>
+                                    <input
+                                        type="text"
+                                        className="w-full rounded-lg border border-zinc-700 bg-zinc-800 px-4 py-3 focus:border-[#6633ff] focus:outline-none"
                                         placeholder="Your name"
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-sm font-medium mb-2">Email</label>
-                                    <input 
-                                        type="email" 
-                                        className="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg focus:border-[#6633ff] focus:outline-none"
+                                    <label className="mb-2 block text-sm font-medium">Email</label>
+                                    <input
+                                        type="email"
+                                        className="w-full rounded-lg border border-zinc-700 bg-zinc-800 px-4 py-3 focus:border-[#6633ff] focus:outline-none"
                                         placeholder="your@email.com"
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-sm font-medium mb-2">Subject</label>
-                                    <input 
-                                        type="text" 
-                                        className="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg focus:border-[#6633ff] focus:outline-none"
+                                    <label className="mb-2 block text-sm font-medium">Subject</label>
+                                    <input
+                                        type="text"
+                                        className="w-full rounded-lg border border-zinc-700 bg-zinc-800 px-4 py-3 focus:border-[#6633ff] focus:outline-none"
                                         placeholder="What's this about?"
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-sm font-medium mb-2">Message</label>
-                                    <textarea 
+                                    <label className="mb-2 block text-sm font-medium">Message</label>
+                                    <textarea
                                         rows={5}
-                                        className="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg focus:border-[#6633ff] focus:outline-none resize-none"
+                                        className="w-full resize-none rounded-lg border border-zinc-700 bg-zinc-800 px-4 py-3 focus:border-[#6633ff] focus:outline-none"
                                         placeholder="Your message..."
                                     />
                                 </div>
-                                <button 
+                                <button
                                     type="submit"
-                                    className="w-full px-6 py-3 bg-[#6633ff] hover:bg-[#7c4dff] text-white rounded-lg font-semibold transition-colors"
+                                    className="w-full rounded-lg bg-[#6633ff] px-6 py-3 font-semibold text-white transition-colors hover:bg-[#7c4dff]"
                                 >
                                     Send Message
                                 </button>
@@ -61,26 +57,32 @@ const Contact = () => {
                         </div>
 
                         <div>
-                            <h2 className="text-2xl font-bold text-[#6633ff] mb-6">Get in touch</h2>
+                            <h2 className="mb-6 text-2xl font-bold text-[#6633ff]">Get in touch</h2>
                             <div className="space-y-6">
                                 <div>
-                                    <h3 className="font-semibold mb-2">Booking & Management</h3>
+                                    <h3 className="mb-2 font-semibold">Booking & Management</h3>
                                     <p className="text-gray-300">booking@thevelvetpulse.com</p>
                                 </div>
                                 <div>
-                                    <h3 className="font-semibold mb-2">Press & Media</h3>
+                                    <h3 className="mb-2 font-semibold">Press & Media</h3>
                                     <p className="text-gray-300">press@thevelvetpulse.com</p>
                                 </div>
                                 <div>
-                                    <h3 className="font-semibold mb-2">General Inquiries</h3>
+                                    <h3 className="mb-2 font-semibold">General Inquiries</h3>
                                     <p className="text-gray-300">info@thevelvetpulse.com</p>
                                 </div>
                                 <div>
-                                    <h3 className="font-semibold mb-2">Follow Us</h3>
+                                    <h3 className="mb-2 font-semibold">Follow Us</h3>
                                     <div className="flex gap-4 text-[#6633ff]">
-                                        <a href="#" className="hover:text-[#7c4dff] transition-colors">Instagram</a>
-                                        <a href="#" className="hover:text-[#7c4dff] transition-colors">Spotify</a>
-                                        <a href="#" className="hover:text-[#7c4dff] transition-colors">YouTube</a>
+                                        <a href="#" className="transition-colors hover:text-[#7c4dff]">
+                                            Instagram
+                                        </a>
+                                        <a href="#" className="transition-colors hover:text-[#7c4dff]">
+                                            Spotify
+                                        </a>
+                                        <a href="#" className="transition-colors hover:text-[#7c4dff]">
+                                            YouTube
+                                        </a>
                                     </div>
                                 </div>
                             </div>

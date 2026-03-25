@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Newsletter: React.FC = () => (
-    <div className="animate-in fade-in slide-in-from-bottom duration-700">
+    <div className="duration-700 animate-in fade-in slide-in-from-bottom">
         {/* Content */}
 
         <div className="max-w-lg rounded-2xl bg-[#1a1a1a] p-2 text-white">

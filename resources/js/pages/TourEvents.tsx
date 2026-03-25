@@ -4,9 +4,9 @@ import React from 'react';
 
 const TourEvents: React.FC = () => {
     return (
-        <div className="flex flex-col min-h-screen text-white bg-gradient-to-b from-black via-zinc-900 to-black">
+        <div className="flex min-h-screen flex-col bg-gradient-to-b from-black via-zinc-900 to-black text-white">
             <Header />
-            <main className="flex flex-col items-center justify-center flex-grow px-4 text-center">
+            <main className="flex flex-grow flex-col items-center justify-center px-4 text-center">
                 <section className="mb-8">
                     <div></div>
                     <div>

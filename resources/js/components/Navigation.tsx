@@ -11,11 +11,7 @@ export default function Navigation() {
     return (
         <nav className="flex space-x-8">
             {navigation.map((item) => (
-                <Link
-                    key={item.name}
-                    href={item.href}
-                    className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
-                >
+                <Link key={item.name} href={item.href} className="text-sm font-medium text-gray-700 transition-colors hover:text-gray-900">
                     {item.name}
                 </Link>
             ))}

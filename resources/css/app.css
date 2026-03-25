@@ -161,7 +161,9 @@
 
 /* Basic accessible reset and helpers */
 @layer base {
-    html, body, #app {
+    html,
+    body,
+    #app {
         height: 100%;
     }
 

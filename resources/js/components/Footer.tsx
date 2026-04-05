@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
                     <a href="https://spotify.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#6633ff]">
                         <FaSpotify />
                     </a>
-                    <a href="mailto:dev@graveyardjokes.com" className="hover:text-[#6633ff]">
+                    <a href="mailto:info@graveyardjokes.com" className="hover:text-[#6633ff]">
                         <FaEnvelope />
                     </a>
                 </div>

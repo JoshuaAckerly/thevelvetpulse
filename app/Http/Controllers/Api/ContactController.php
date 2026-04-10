@@ -40,7 +40,7 @@ class ContactController extends Controller
                 Mail::send('emails.contact', $contactData, function ($message) use ($contactData) {
                     $message->to('contact@thevelvetpulse.com')
                         ->from($contactData['email'], $contactData['name'])
-                        ->subject('New Contact Form Submission: ' . $contactData['subject']);
+                        ->subject('New Contact Form Submission: '.$contactData['subject']);
                 });
             }
 
@@ -49,7 +49,7 @@ class ContactController extends Controller
                 'message' => 'Your message has been sent successfully.',
             ], 200);
         } catch (\Exception $e) {
-            \Log::error('Contact form error: ' . $e->getMessage());
+            \Log::error('Contact form error: '.$e->getMessage());
 
             return response()->json([
                 'success' => false,

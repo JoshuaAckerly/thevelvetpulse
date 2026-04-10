@@ -73,14 +73,10 @@ const Contact = () => {
                             <h2 className="mb-6 text-2xl font-bold text-[#6633ff]">Send us a message</h2>
                             <form onSubmit={handleSubmit} className="space-y-6">
                                 {submitStatus === 'success' && (
-                                    <div className="rounded-lg border border-green-500 bg-green-500/20 px-4 py-3 text-green-300">
-                                        {submitMessage}
-                                    </div>
+                                    <div className="rounded-lg border border-green-500 bg-green-500/20 px-4 py-3 text-green-300">{submitMessage}</div>
                                 )}
                                 {submitStatus === 'error' && (
-                                    <div className="rounded-lg border border-red-500 bg-red-500/20 px-4 py-3 text-red-300">
-                                        {submitMessage}
-                                    </div>
+                                    <div className="rounded-lg border border-red-500 bg-red-500/20 px-4 py-3 text-red-300">{submitMessage}</div>
                                 )}
                                 <div>
                                     <label className="mb-2 block text-sm font-medium">Name</label>
@@ -133,7 +129,7 @@ const Contact = () => {
                                 <button
                                     type="submit"
                                     disabled={isSubmitting}
-                                    className="w-full rounded-lg bg-[#6633ff] px-6 py-3 font-semibold text-white transition-colors hover:bg-[#7c4dff] disabled:opacity-50 disabled:cursor-not-allowed"
+                                    className="w-full rounded-lg bg-[#6633ff] px-6 py-3 font-semibold text-white transition-colors hover:bg-[#7c4dff] disabled:cursor-not-allowed disabled:opacity-50"
                                 >
                                     {isSubmitting ? 'Sending...' : 'Send Message'}
                                 </button>

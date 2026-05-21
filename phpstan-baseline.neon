@@ -1,0 +1,271 @@
+parameters:
+	ignoreErrors:
+		-
+			rawMessage: 'Method App\Console\Commands\MigrateImagesToS3::handle() has no return type specified.'
+			identifier: missingType.return
+			count: 1
+			path: app/Console/Commands/MigrateImagesToS3.php
+
+		-
+			rawMessage: 'Parameter #1 $path of function base_path expects string, string|null given.'
+			identifier: argument.type
+			count: 1
+			path: app/Console/Commands/MigrateImagesToS3.php
+
+		-
+			rawMessage: Binary operation "." between 'New Contact Form…' and mixed results in an error.
+			identifier: binaryOp.invalid
+			count: 1
+			path: app/Http/Controllers/Api/ContactController.php
+
+		-
+			rawMessage: 'Cannot call method from() on mixed.'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/Api/ContactController.php
+
+		-
+			rawMessage: 'Cannot call method subject() on mixed.'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/Api/ContactController.php
+
+		-
+			rawMessage: 'Cannot call method to() on mixed.'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/Api/ContactController.php
+
+		-
+			rawMessage: 'Method App\Http\Controllers\Api\ContactController::store() has no return type specified.'
+			identifier: missingType.return
+			count: 1
+			path: app/Http/Controllers/Api/ContactController.php
+
+		-
+			rawMessage: Cannot access property $email on App\Models\User|null.
+			identifier: property.nonObject
+			count: 1
+			path: app/Http/Controllers/Auth/ConfirmablePasswordController.php
+
+		-
+			rawMessage: 'Cannot call method hasVerifiedEmail() on App\Models\User|null.'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/Auth/EmailVerificationNotificationController.php
+
+		-
+			rawMessage: 'Cannot call method sendEmailVerificationNotification() on App\Models\User|null.'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/Auth/EmailVerificationNotificationController.php
+
+		-
+			rawMessage: 'Cannot call method hasVerifiedEmail() on App\Models\User|null.'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/Auth/EmailVerificationPromptController.php
+
+		-
+			rawMessage: 'Cannot call method forceFill() on mixed.'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/Auth/NewPasswordController.php
+
+		-
+			rawMessage: 'Cannot call method save() on mixed.'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/Auth/NewPasswordController.php
+
+		-
+			rawMessage: 'Parameter #1 $key of function __ expects string|null, mixed given.'
+			identifier: argument.type
+			count: 2
+			path: app/Http/Controllers/Auth/NewPasswordController.php
+
+		-
+			rawMessage: 'Parameter #1 $user of class Illuminate\Auth\Events\PasswordReset constructor expects Illuminate\Contracts\Auth\Authenticatable, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: app/Http/Controllers/Auth/NewPasswordController.php
+
+		-
+			rawMessage: 'Parameter #1 $value of static method Illuminate\Support\Facades\Hash::make() expects string, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: app/Http/Controllers/Auth/NewPasswordController.php
+
+		-
+			rawMessage: 'Parameter #1 $value of static method Illuminate\Support\Facades\Hash::make() expects string, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: app/Http/Controllers/Auth/RegisteredUserController.php
+
+		-
+			rawMessage: 'Cannot call method hasVerifiedEmail() on App\Models\User|null.'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/Auth/VerifyEmailController.php
+
+		-
+			rawMessage: 'Cannot call method markEmailAsVerified() on App\Models\User|null.'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/Auth/VerifyEmailController.php
+
+		-
+			rawMessage: Cannot access offset 'password' on mixed.
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: app/Http/Controllers/Settings/PasswordController.php
+
+		-
+			rawMessage: 'Cannot call method update() on App\Models\User|null.'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/Settings/PasswordController.php
+
+		-
+			rawMessage: 'Parameter #1 $value of static method Illuminate\Support\Facades\Hash::make() expects string, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: app/Http/Controllers/Settings/PasswordController.php
+
+		-
+			rawMessage: Cannot access property $email_verified_at on App\Models\User|null.
+			identifier: property.nonObject
+			count: 1
+			path: app/Http/Controllers/Settings/ProfileController.php
+
+		-
+			rawMessage: 'Cannot call method delete() on App\Models\User|null.'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/Settings/ProfileController.php
+
+		-
+			rawMessage: 'Cannot call method fill() on App\Models\User|null.'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/Settings/ProfileController.php
+
+		-
+			rawMessage: 'Cannot call method isDirty() on App\Models\User|null.'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/Settings/ProfileController.php
+
+		-
+			rawMessage: 'Cannot call method save() on App\Models\User|null.'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/Settings/ProfileController.php
+
+		-
+			rawMessage: 'Method App\Http\Middleware\HandleInertiaRequests::share() should return array<string, mixed> but returns array.'
+			identifier: return.type
+			count: 1
+			path: app/Http/Middleware/HandleInertiaRequests.php
+
+		-
+			rawMessage: 'Parameter #1 $string of function str expects string|null, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: app/Http/Middleware/HandleInertiaRequests.php
+
+		-
+			rawMessage: 'Parameter #1 $string of function trim expects string, string|null given.'
+			identifier: argument.type
+			count: 2
+			path: app/Http/Middleware/HandleInertiaRequests.php
+
+		-
+			rawMessage: 'Method App\Http\Middleware\TrackSiteVisit::handle() should return Symfony\Component\HttpFoundation\Response but returns mixed.'
+			identifier: return.type
+			count: 1
+			path: app/Http/Middleware/TrackSiteVisit.php
+
+		-
+			rawMessage: Cannot access property $id on App\Models\User|null.
+			identifier: property.nonObject
+			count: 1
+			path: app/Http/Requests/Settings/ProfileUpdateRequest.php
+
+		-
+			rawMessage: 'Method App\Jobs\ReportVisitToAuthSystem::__construct() has parameter $visitData with no value type specified in iterable type array.'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Jobs/ReportVisitToAuthSystem.php
+
+		-
+			rawMessage: 'Parameter #1 $token of static method Illuminate\Http\Client\PendingRequest<false>::withToken() expects string, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: app/Jobs/ReportVisitToAuthSystem.php
+
+		-
+			rawMessage: 'Parameter #1 $url of method Illuminate\Http\Client\PendingRequest<false>::post() expects string, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: app/Jobs/ReportVisitToAuthSystem.php
+
+		-
+			rawMessage: 'Parameter #2 $data of method Illuminate\Http\Client\PendingRequest<false>::post() expects array<int<0, max>|string, mixed>|Illuminate\Contracts\Support\Arrayable<string, mixed>|JsonSerializable, array given.'
+			identifier: argument.type
+			count: 1
+			path: app/Jobs/ReportVisitToAuthSystem.php
+
+		-
+			rawMessage: Instanceof between Illuminate\Http\Client\Response and Illuminate\Http\Client\Response will always evaluate to true.
+			identifier: instanceof.alwaysTrue
+			count: 3
+			path: app/Services/AuthSystemService.php
+
+		-
+			rawMessage: 'Method App\Services\AuthSystemService::getMessages() should return array<string, mixed>|null but returns array<mixed, mixed>.'
+			identifier: return.type
+			count: 1
+			path: app/Services/AuthSystemService.php
+
+		-
+			rawMessage: 'Method App\Services\ImageService::listImages() return type has no value type specified in iterable type array.'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Services/ImageService.php
+
+		-
+			rawMessage: 'Parameter #2 $contents of method Illuminate\Filesystem\FilesystemAdapter::put() expects Illuminate\Http\File|Illuminate\Http\UploadedFile|Psr\Http\Message\StreamInterface|resource|string, string|false given.'
+			identifier: argument.type
+			count: 1
+			path: app/Services/ImageService.php
+
+		-
+			rawMessage: 'Part $bucket (mixed) of encapsed string cannot be cast to string.'
+			identifier: encapsedStringPart.nonString
+			count: 3
+			path: app/Services/ImageService.php
+
+		-
+			rawMessage: 'Part $region (mixed) of encapsed string cannot be cast to string.'
+			identifier: encapsedStringPart.nonString
+			count: 3
+			path: app/Services/ImageService.php
+
+		-
+			rawMessage: 'Method Tests\Feature\ExampleTest::it_loads_the_homepage() has no return type specified.'
+			identifier: missingType.return
+			count: 1
+			path: tests/Feature/ExampleTest.php
+
+		-
+			rawMessage: 'Call to method PHPUnit\Framework\Assert::assertTrue() with true will always evaluate to true.'
+			identifier: method.alreadyNarrowedType
+			count: 1
+			path: tests/Unit/ExampleTest.php
+
+		-
+			rawMessage: 'Method Tests\Unit\ExampleTest::it_checks_that_true_is_true() has no return type specified.'
+			identifier: missingType.return
+			count: 1
+			path: tests/Unit/ExampleTest.php

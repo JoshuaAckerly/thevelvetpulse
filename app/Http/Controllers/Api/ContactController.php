@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Mail\Message;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 
@@ -12,7 +14,7 @@ class ContactController extends Controller
     /**
      * Handle contact form submission
      */
-    public function store(Request $request)
+    public function store(Request $request): JsonResponse
     {
         // Validate the request
         $validator = Validator::make($request->all(), [
@@ -27,17 +29,18 @@ class ContactController extends Controller
         }
 
         // Prepare email
+        /** @var array{name: string, email: string, subject: string, message: string} $contactData */
         $contactData = [
-            'name' => $request->name,
-            'email' => $request->email,
-            'subject' => $request->subject,
-            'message' => $request->message,
+            'name' => $request->string('name')->value(),
+            'email' => $request->string('email')->value(),
+            'subject' => $request->string('subject')->value(),
+            'message' => $request->string('message')->value(),
         ];
 
         try {
             // Send email to admin (if mail is configured)
             if (config('mail.mailer') !== 'log') {
-                Mail::send('emails.contact', $contactData, function ($message) use ($contactData) {
+                Mail::send('emails.contact', $contactData, function (Message $message) use ($contactData) {
                     $message->to('contact@thevelvetpulse.com')
                         ->from($contactData['email'], $contactData['name'])
                         ->subject('New Contact Form Submission: '.$contactData['subject']);

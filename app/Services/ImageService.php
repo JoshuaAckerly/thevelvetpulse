@@ -35,6 +35,8 @@ class ImageService
         // Return the public URL
         $bucket = config('filesystems.disks.s3.bucket');
         $region = config('filesystems.disks.s3.region');
+        assert(is_string($bucket));
+        assert(is_string($region));
 
         return "https://{$bucket}.s3.{$region}.amazonaws.com/{$path}";
     }
@@ -59,6 +61,8 @@ class ImageService
         $disk = Storage::disk('s3');
         $bucket = config('filesystems.disks.s3.bucket');
         $region = config('filesystems.disks.s3.region');
+        assert(is_string($bucket));
+        assert(is_string($region));
 
         return "https://{$bucket}.s3.{$region}.amazonaws.com/{$path}";
     }
@@ -77,10 +81,14 @@ class ImageService
      * List all images in a directory.
      *
      * @param  string  $directory  Directory within thevelvetpulse folder
+     * @return array<int, string>
      */
     public function listImages(string $directory = 'images'): array
     {
-        return Storage::disk('s3')->files($directory);
+        /** @var array<int, string> $files */
+        $files = Storage::disk('s3')->files($directory);
+
+        return $files;
     }
 
     /**
@@ -93,10 +101,12 @@ class ImageService
     public function copyToS3(string $localPath, string $s3Path): string
     {
         $contents = file_get_contents($localPath);
-        Storage::disk('s3')->put($s3Path, $contents, 'public');
+        Storage::disk('s3')->put($s3Path, $contents !== false ? $contents : '', 'public');
 
         $bucket = config('filesystems.disks.s3.bucket');
         $region = config('filesystems.disks.s3.region');
+        assert(is_string($bucket));
+        assert(is_string($region));
 
         return "https://{$bucket}.s3.{$region}.amazonaws.com/{$s3Path}";
     }

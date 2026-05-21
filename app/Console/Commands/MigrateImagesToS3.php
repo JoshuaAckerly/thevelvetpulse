@@ -27,10 +27,10 @@ class MigrateImagesToS3 extends Command
     /**
      * Execute the console command.
      */
-    public function handle()
+    public function handle(): int
     {
         $isDryRun = $this->option('dry-run');
-        $sourceDir = base_path($this->option('directory'));
+        $sourceDir = base_path((string) $this->option('directory'));
 
         if (! File::exists($sourceDir)) {
             $this->error("Source directory does not exist: {$sourceDir}");

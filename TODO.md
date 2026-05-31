@@ -35,6 +35,9 @@
 - [ ] Mobile app
 - [ ] Third-party integrations
 
+## Automation
+- [ ] Add Dependabot (`.github/dependabot.yml`) for npm + composer automated dependency PRs
+
 ## Completed
 - [x] Database configuration
 - [x] Main application layout components

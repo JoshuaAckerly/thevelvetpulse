@@ -5,7 +5,7 @@
 - [ ] Set up browser/E2E testing
 - [ ] Add frontend component testing
 - [ ] Backend form validation request classes (currently inline in controller)
-- [ ] Set up CI/CD pipeline
+- [x] Set up CI/CD pipeline
 
 ## UI/UX
 - [ ] Dark mode support
@@ -24,7 +24,7 @@
 - [ ] Security audit
 - [ ] Input sanitization review
 - [ ] Rate limiting implementation
-- [ ] Security headers configuration
+- [x] Security headers configuration
 
 ## Documentation
 - [ ] Component documentation

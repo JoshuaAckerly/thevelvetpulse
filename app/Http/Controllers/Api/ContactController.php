@@ -17,8 +17,8 @@ class ContactController extends Controller
     {
         /** @var array{name: string, email: string, subject: string, message: string} $contactData */
         $contactData = [
-            'name'    => $request->string('name')->value(),
-            'email'   => $request->string('email')->value(),
+            'name' => $request->string('name')->value(),
+            'email' => $request->string('email')->value(),
             'subject' => $request->string('subject')->value(),
             'message' => $request->string('message')->value(),
         ];

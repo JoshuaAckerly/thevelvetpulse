@@ -4,13 +4,13 @@
 - [ ] Write unit tests for models
 - [ ] Set up browser/E2E testing
 - [ ] Add frontend component testing
-- [ ] Backend form validation request classes (currently inline in controller)
+- [x] Backend form validation request classes (currently inline in controller)
 - [x] Set up CI/CD pipeline
 
 ## UI/UX
-- [ ] Dark mode support
+- [x] Dark mode support
 - [ ] Loading states and animations
-- [ ] Accessibility improvements
+- [x] Accessibility improvements
 - [ ] Responsive design improvements for tablets
 
 ## Performance
@@ -23,7 +23,7 @@
 ## Security
 - [ ] Security audit
 - [ ] Input sanitization review
-- [ ] Rate limiting implementation
+- [x] Rate limiting implementation
 - [x] Security headers configuration
 
 ## Documentation

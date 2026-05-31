@@ -3,36 +3,22 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Api\ContactRequest;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
 use Illuminate\Mail\Message;
 use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\Validator;
 
 class ContactController extends Controller
 {
     /**
      * Handle contact form submission
      */
-    public function store(Request $request): JsonResponse
+    public function store(ContactRequest $request): JsonResponse
     {
-        // Validate the request
-        $validator = Validator::make($request->all(), [
-            'name' => 'required|string|max:255',
-            'email' => 'required|email|max:255',
-            'subject' => 'required|string|max:255',
-            'message' => 'required|string|min:10|max:5000',
-        ]);
-
-        if ($validator->fails()) {
-            return response()->json(['errors' => $validator->errors()], 422);
-        }
-
-        // Prepare email
         /** @var array{name: string, email: string, subject: string, message: string} $contactData */
         $contactData = [
-            'name' => $request->string('name')->value(),
-            'email' => $request->string('email')->value(),
+            'name'    => $request->string('name')->value(),
+            'email'   => $request->string('email')->value(),
             'subject' => $request->string('subject')->value(),
             'message' => $request->string('message')->value(),
         ];

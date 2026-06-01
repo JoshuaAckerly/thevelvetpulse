@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use League\CommonMark\CommonMarkConverter;
 use Spatie\Sitemap\Sitemap;
 use Spatie\Sitemap\Tags\Url;
 
@@ -36,6 +37,20 @@ Route::get('/contact', function () {
 Route::get('/about', function () {
     return Inertia::render('AboutUs');
 })->name('about');
+
+Route::get('/terms', function () {
+    $converter = new CommonMarkConverter(['html_input' => 'escape', 'allow_unsafe_links' => false]);
+    $markdown = file_get_contents(base_path('legal/TERMS_OF_SERVICE.md'));
+    $html = $converter->convert($markdown)->getContent();
+    return Inertia::render('legal/Terms', ['content' => $html]);
+})->name('terms');
+
+Route::get('/privacy', function () {
+    $converter = new CommonMarkConverter(['html_input' => 'escape', 'allow_unsafe_links' => false]);
+    $markdown = file_get_contents(base_path('legal/PRIVACY_POLICY.md'));
+    $html = $converter->convert($markdown)->getContent();
+    return Inertia::render('legal/Privacy', ['content' => $html]);
+})->name('privacy');
 
 Route::get('/generate-sitemap', function () {
     $base = 'https://thevelvetpulse.graveyardjokes.com';

@@ -42,6 +42,7 @@ Route::get('/terms', function () {
     $converter = new CommonMarkConverter(['html_input' => 'escape', 'allow_unsafe_links' => false]);
     $markdown = file_get_contents(base_path('legal/TERMS_OF_SERVICE.md'));
     $html = $converter->convert($markdown)->getContent();
+
     return Inertia::render('legal/Terms', ['content' => $html]);
 })->name('terms');
 
@@ -49,6 +50,7 @@ Route::get('/privacy', function () {
     $converter = new CommonMarkConverter(['html_input' => 'escape', 'allow_unsafe_links' => false]);
     $markdown = file_get_contents(base_path('legal/PRIVACY_POLICY.md'));
     $html = $converter->convert($markdown)->getContent();
+
     return Inertia::render('legal/Privacy', ['content' => $html]);
 })->name('privacy');
 

@@ -2,6 +2,9 @@
     "private": true,
     "type": "module",
     "scripts": {
+        "test": "vitest run --passWithNoTests",
+        "test:watch": "vitest",
+        "test:ui": "vitest --ui",
         "build": "vite build",
         "build:ssr": "vite build && vite build --ssr",
         "dev": "vite",
@@ -12,17 +15,22 @@
     },
     "devDependencies": {
         "@eslint/js": "^9.19.0",
+        "@testing-library/jest-dom": "^6.9.1",
+        "@testing-library/react": "^16.3.2",
         "@types/node": "^22.13.5",
+        "@vitest/ui": "^4.1.9",
         "eslint": "^9.39.4",
         "eslint-config-prettier": "^10.1.8",
         "eslint-plugin-jsx-a11y": "^6.10.2",
         "eslint-plugin-react": "^7.37.5",
         "eslint-plugin-react-hooks": "^5.2.0",
+        "jsdom": "^29.1.1",
         "prettier": "^3.5.3",
         "prettier-plugin-organize-imports": "^4.1.0",
         "prettier-plugin-tailwindcss": "^0.6.12",
         "sharp": "^0.34.5",
         "typescript-eslint": "^8.23.0",
+        "vitest": "^4.1.9",
         "ziggy-js": "^2.5.3"
     },
     "dependencies": {
@@ -49,15 +57,14 @@
         "clsx": "^2.1.1",
         "concurrently": "^9.0.1",
         "globals": "^15.14.0",
-        "laravel-vite-plugin": "^1.0",
+        "laravel-vite-plugin": "^2.1.0",
         "lucide-react": "^0.475.0",
         "react": "^19.0.0",
         "react-dom": "^19.0.0",
-        "react-icons": "^5.5.0",
         "tailwind-merge": "^3.0.1",
         "tailwindcss-animate": "^1.0.7",
         "typescript": "^5.7.2",
-        "vite": "^6.0"
+        "vite": "^7.3.5"
     },
     "optionalDependencies": {
         "@rollup/rollup-linux-x64-gnu": "4.9.5",

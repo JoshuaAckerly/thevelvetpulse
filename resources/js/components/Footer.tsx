@@ -56,8 +56,12 @@ const Footer: React.FC = () => {
             {/* Divider and Copyright */}
             <div className="mt-6 border-t border-gray-700 pt-4 text-center text-xs text-gray-500">
                 <div className="mb-2 flex justify-center gap-4">
-                    <Link href="/terms" className="transition hover:text-[#6633ff]">Terms of Service</Link>
-                    <Link href="/privacy" className="transition hover:text-[#6633ff]">Privacy Policy</Link>
+                    <Link href="/terms" className="transition hover:text-[#6633ff]">
+                        Terms of Service
+                    </Link>
+                    <Link href="/privacy" className="transition hover:text-[#6633ff]">
+                        Privacy Policy
+                    </Link>
                 </div>
                 &copy; {new Date().getFullYear()} Joshua Ackerly — The Velvet Pulse. All rights reserved.
             </div>

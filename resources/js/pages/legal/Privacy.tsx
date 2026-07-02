@@ -12,10 +12,7 @@ const Privacy: React.FC<PrivacyProps> = ({ content }) => {
             </section>
 
             <section className="px-6 py-12">
-                <div
-                    className="legal-prose mx-auto max-w-3xl"
-                    dangerouslySetInnerHTML={{ __html: content }}
-                />
+                <div className="legal-prose mx-auto max-w-3xl" dangerouslySetInnerHTML={{ __html: content }} />
             </section>
         </div>
     );

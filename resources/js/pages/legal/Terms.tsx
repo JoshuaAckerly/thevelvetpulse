@@ -12,10 +12,7 @@ const Terms: React.FC<TermsProps> = ({ content }) => {
             </section>
 
             <section className="px-6 py-12">
-                <div
-                    className="legal-prose mx-auto max-w-3xl"
-                    dangerouslySetInnerHTML={{ __html: content }}
-                />
+                <div className="legal-prose mx-auto max-w-3xl" dangerouslySetInnerHTML={{ __html: content }} />
             </section>
         </div>
     );

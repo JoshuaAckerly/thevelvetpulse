@@ -5,8 +5,8 @@ Music-focused content site for The Velvet Pulse. Primarily frontend-heavy with s
 
 ## Tech Stack
 - **Backend**: Laravel 12, PHP 8.2+, Spatie Sitemap
-- **Frontend**: React 19, TypeScript, Inertia.js 2, Tailwind CSS 4, Radix UI, Headless UI, Sharp (image processing), Vite
-- **Testing**: PHPUnit 11 (`php artisan test`)
+- **Frontend**: React 19, TypeScript, Inertia.js 3, Tailwind CSS 4, Radix UI, Headless UI, Sharp (image processing), Vite
+- **Testing**: PHPUnit 11 (`php artisan test`), Vitest + React Testing Library
 - **Storage**: MySQL, AWS S3 (primary image storage), Sharp for server-side image resizing
 
 ## Architecture
@@ -49,6 +49,7 @@ All routes return Inertia pages. **Note: uses PascalCase page names** (e.g., `In
 ## Build & Test
 ```bash
 php artisan test
+npm run test            # Vitest
 npm run build:ssr
 npm run types
 npm run lint

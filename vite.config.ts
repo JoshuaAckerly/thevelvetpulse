@@ -29,7 +29,11 @@ export default defineConfig(({ mode }) => {
             host: '0.0.0.0',
             origin: 'http://thevelvetpulse.graveyardjokes.local:8086',
             cors: {
-                origin: 'http://thevelvetpulse.graveyardjokes.local',
+                origin: [
+                    'http://thevelvetpulse.graveyardjokes.local',
+                    'http://thevelvetpulse.graveyardjokes.local:8005',
+                    'http://localhost:8005',
+                ],
                 credentials: true
             },
             allowedHosts: ['thevelvetpulse.graveyardjokes.local'],

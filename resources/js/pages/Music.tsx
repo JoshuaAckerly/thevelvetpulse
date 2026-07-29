@@ -30,7 +30,7 @@ const Music = () => {
     ];
 
     return (
-        <Layout title="Music">
+        <Layout title="Music" description="Explore The Velvet Pulse discography — albums, singles, and EPs. Stream or download now.">
             <div className="min-h-screen bg-gradient-to-b from-black via-zinc-900 to-black text-white">
                 <Container className="py-16">
                     <div className="mb-16 text-center">
@@ -46,7 +46,7 @@ const Music = () => {
                             <div key={index} className="grid items-center gap-8 md:grid-cols-2">
                                 <div className={`${index % 2 === 1 ? 'md:order-2' : ''}`}>
                                     <div className="aspect-square overflow-hidden rounded-lg bg-zinc-800">
-                                        <img src={album.cover} alt={`${album.title} album cover`} className="h-full w-full object-cover" />
+                                        <img src={album.cover} alt={`${album.title} album cover`} className="h-full w-full object-cover" loading="lazy" decoding="async" />
                                     </div>
                                 </div>
                                 <div className={`${index % 2 === 1 ? 'md:order-1' : ''}`}>

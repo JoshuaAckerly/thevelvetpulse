@@ -3,7 +3,7 @@
 ## Development
 - [ ] Write unit tests for models
 - [ ] Set up browser/E2E testing
-- [ ] Add frontend component testing
+- [x] Add frontend component testing
 - [x] Backend form validation request classes (currently inline in controller)
 - [x] Set up CI/CD pipeline
 
@@ -17,12 +17,12 @@
 - [ ] Optimize database queries
 - [ ] Implement caching strategy
 - [ ] Bundle size optimization
-- [ ] Image optimization
-- [ ] SEO improvements
+- [x] Image optimization (lazy loading + decoding=async on all img tags)
+- [x] SEO improvements (SEO component with OG tags, meta descriptions per-page)
 
 ## Security
 - [ ] Security audit
-- [ ] Input sanitization review
+- [x] Input sanitization review (ContactController uses Log facade + Mailable pattern)
 - [x] Rate limiting implementation
 - [x] Security headers configuration
 

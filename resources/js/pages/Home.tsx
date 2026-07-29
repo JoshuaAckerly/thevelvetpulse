@@ -8,7 +8,7 @@ const Home = () => {
     const backgroundImage = `url('${cdn}/backgrounds/AdobeStock_1423234483.webp')`;
 
     return (
-        <Layout title="Welcome">
+        <Layout title="Welcome" description="Experience the electrifying sound of The Velvet Pulse — indie rock pushing boundaries. Latest music, tours, and merch.">
             {/* Hero Section */}
             <div className="relative min-h-screen bg-cover bg-center" style={{ backgroundImage }}>
                 <div className="absolute inset-0 bg-black/60" />

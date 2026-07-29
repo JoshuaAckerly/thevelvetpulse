@@ -48,7 +48,7 @@ const Merch = () => {
     ];
 
     return (
-        <Layout title="Merchandise">
+        <Layout title="Merchandise" description="Official The Velvet Pulse merchandise — t-shirts, hoodies, vinyl, and more.">
             <div className="min-h-screen bg-gradient-to-b from-black via-zinc-900 to-black text-white">
                 <Container className="py-16">
                     <div className="mb-12 text-center">

@@ -39,7 +39,7 @@ const TopAlbums: React.FC = () => {
                     {albums.map((album, idx) => (
                         <li className="album-item flex flex-col place-items-center" key={idx}>
                             <div className="album-cover relative m-2 flex h-auto w-40 items-center justify-center rounded-2xl p-2">
-                                <img src={album.cover} alt="Album Cover" className="h-auto w-full" />
+                                <img src={album.cover} alt="Album Cover" className="h-auto w-full" loading="lazy" decoding="async" />
                                 <div className="album-info bg-opacity-50 absolute inset-0 z-10 flex flex-col items-center justify-center bg-black text-center text-white opacity-0 transition-opacity hover:opacity-100">
                                     <h2 className="album-title">{album.title}</h2>
                                     <p className="album-artist">{album.artist}</p>
@@ -52,7 +52,7 @@ const TopAlbums: React.FC = () => {
             </section>
             <section>
                 <div>
-                    <img src={`${cdn}/band/TourBusInteriorwithInstrumentsandStageEquipment.webp`} alt="Placeholder" className="placeholder-image" />
+                    <img src={`${cdn}/band/TourBusInteriorwithInstrumentsandStageEquipment.webp`} alt="Tour bus with instruments" className="placeholder-image" loading="lazy" decoding="async" />
                     <div>
                         <div>
                             <h2>On Tour</h2>

@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
                     <a href="https://spotify.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#6633ff]" aria-label="Spotify">
                         <SpotifyIcon />
                     </a>
-                    <a href="mailto:joshua@graveyardjokes.com" className="hover:text-[#6633ff]" aria-label="Email">
+                    <a href="mailto:admin@graveyardjokes.com" className="hover:text-[#6633ff]" aria-label="Email">
                         <Mail className="h-5 w-5" />
                     </a>
                 </div>

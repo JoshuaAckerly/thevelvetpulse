@@ -30,7 +30,7 @@ const Tours = () => {
     ];
 
     return (
-        <Layout title="Tours">
+        <Layout title="Tours" description="The Velvet Pulse tour dates and upcoming shows. Get your tickets before they sell out.">
             <div className="min-h-screen bg-gradient-to-b from-black via-zinc-900 to-black text-white">
                 <Container className="py-16">
                     <div className="mb-12 text-center">

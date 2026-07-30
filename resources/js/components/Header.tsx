@@ -16,7 +16,11 @@ const Header = () => {
     return (
         <header className="bg-[#1a1a1a] px-6 py-6 text-white shadow-md">
             <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 md:flex-row md:justify-between">
-                <Link href="/" className="text-3xl font-bold text-[#6633ff] transition-colors hover:text-[#7c4dff]">
+                <Link href="/" className="flex items-center gap-2.5 text-3xl font-bold text-[#6633ff] transition-colors hover:text-[#7c4dff]">
+                    <svg viewBox="0 0 48 48" className="h-9 w-9 shrink-0" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <circle cx="24" cy="24" r="22" stroke="#6633ff" strokeWidth="2"/>
+                        <text x="24" y="30" fontFamily="serif" fontSize="14" fontWeight="700" textAnchor="middle" fill="#6633ff">TVP</text>
+                    </svg>
                     The Velvet Pulse
                 </Link>
 

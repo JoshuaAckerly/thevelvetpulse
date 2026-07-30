@@ -11,7 +11,7 @@ const Home = () => {
         <Layout title="Welcome" description="Experience the electrifying sound of The Velvet Pulse — indie rock pushing boundaries. Latest music, tours, and merch.">
             {/* Hero Section */}
             <div className="relative min-h-screen bg-cover bg-center" style={{ backgroundImage }}>
-                <div className="absolute inset-0 bg-black/60" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#6633ff]/50 via-black/60 to-black/80" />
                 <div className="relative z-10 flex min-h-screen items-center justify-center">
                     <Container>
                         <div className="text-center text-white">

@@ -1,5 +1,6 @@
-import { Head } from '@inertiajs/react';
-import { ReactNode } from 'react';
+import { Head, router } from '@inertiajs/react';
+import gsap from 'gsap';
+import { ReactNode, useEffect, useRef } from 'react';
 import Footer from './Footer';
 import Header from './Header';
 import SEO from './SEO';
@@ -14,6 +15,17 @@ interface LayoutProps {
 }
 
 export default function Layout({ children, title, description, keywords, ogImage, canonicalUrl }: LayoutProps) {
+    const overlayRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const off1 = router.on('before', () => {
+            if (overlayRef.current) gsap.fromTo(overlayRef.current, { opacity: 0, pointerEvents: 'none' }, { opacity: 1, pointerEvents: 'all', duration: 0.3, ease: 'power1.in' });
+        });
+        const off2 = router.on('finish', () => {
+            if (overlayRef.current) gsap.to(overlayRef.current, { opacity: 0, pointerEvents: 'none', duration: 0.4, ease: 'power2.out', delay: 0.05 });
+        });
+        return () => { off1(); off2(); };
+    }, []);
     return (
         <>
             <SEO
@@ -30,6 +42,7 @@ export default function Layout({ children, title, description, keywords, ogImage
                 Skip to main content
             </a>
             <div className="flex min-h-screen flex-col">
+                <div ref={overlayRef} className="pointer-events-none fixed inset-0 z-[9999] bg-black opacity-0" aria-hidden="true" />
                 <Header />
                 <main id="main-content" className="flex-1">
                     {children}

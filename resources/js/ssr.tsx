@@ -29,5 +29,5 @@ createServer(
                 return <App {...props} />;
             },
         }),
-    13717, // thevelvetpulse SSR port
+    { port: 13717, host: '127.0.0.1' }, // thevelvetpulse SSR port
 );

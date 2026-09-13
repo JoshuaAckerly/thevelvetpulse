@@ -27,16 +27,17 @@ export default defineConfig(({ mode, isSsrBuild }) => {
         server = {
             port: 8086,
             host: '0.0.0.0',
-            origin: 'http://thevelvetpulse.graveyardjokes.local:8086',
+            origin: env.VITE_ORIGIN || 'http://thevelvetpulse.graveyardjokes.test:8086',
             cors: {
                 origin: [
-                    'http://thevelvetpulse.graveyardjokes.local',
-                    'http://thevelvetpulse.graveyardjokes.local:8005',
+                    'http://thevelvetpulse.graveyardjokes.test',
+                    'http://thevelvetpulse.graveyardjokes.test:8005',
                     'http://localhost:8005',
+                    'http://10.0.1.20:8005',
                 ],
                 credentials: true
             },
-            allowedHosts: ['thevelvetpulse.graveyardjokes.local'],
+            allowedHosts: ['thevelvetpulse.graveyardjokes.test', '10.0.1.20'],
         };
     }
 
